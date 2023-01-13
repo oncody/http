@@ -1,4 +1,4 @@
-import AssociativeArrayObject from "../../yahoo-finance-scraper/libraries/object/associative-array-object.js";
+import AssociativeArrayObject from "@oncody/objects/src/associative-array-object.js";
 
 export default class Cookies {
     /**
