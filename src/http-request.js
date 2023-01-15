@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default class HttpRequester {
+export default class HttpRequest {
     /**
      *
      * @param {URL} url

@@ -1,4 +1,4 @@
-import AssociativeArrayObject from "@oncody/objects/src/associative-array-object.js";
+import Objects from "@oncody/objects";
 
 export default class Cookies {
     /**
@@ -26,6 +26,6 @@ export default class Cookies {
      * @returns {string}
      */
     toString() {
-        return AssociativeArrayObject.join(this._cookies, '=', '; ');
+        return Objects.join(this._cookies, '=', '; ');
     }
 }
