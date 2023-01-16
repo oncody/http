@@ -1,12 +1,11 @@
-import Cookies from "./cookies.js";
-import HttpRequest from "./http-request.js";
-import Url from "./url/url.js"
+import {Cookies} from "./cookies.js";
+import {Request} from "./request.js";
+import {Url} from "./url/url.js"
 
-export default class HttpRequestBuilder {
-
+class RequestBuilder {
     /**
      * @param {Url} url
-     * @returns {HttpRequestBuilder}
+     * @returns {RequestBuilder}
      */
     constructor(url) {
         this._url = url;
@@ -16,7 +15,7 @@ export default class HttpRequestBuilder {
     /**
      * @param {string} key
      * @param {string} value
-     * @returns HttpRequestBuilder
+     * @returns RequestBuilder
      */
     cookie(key, value) {
         this._cookies.add(key, value);
@@ -24,9 +23,11 @@ export default class HttpRequestBuilder {
     }
 
     /**
-     * @returns {HttpRequest}
+     * @returns {Request}
      */
     build() {
-        return new HttpRequest(this._url, this._cookies);
+        return new Request(this._url, this._cookies);
     }
 }
+
+export {RequestBuilder}

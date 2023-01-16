@@ -1,4 +1,4 @@
-export default class Url {
+class Url {
     /**
      * @param {string} url
      * @returns {Url}
@@ -15,3 +15,5 @@ export default class Url {
         return this._url;
     }
 }
+
+export {Url}

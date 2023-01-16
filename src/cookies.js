@@ -1,6 +1,6 @@
-import Objects from "@oncody/objects";
+import {Objects} from "@oncody/objects";
 
-export default class Cookies {
+class Cookies {
     /**
      * @returns {Cookies}
      */
@@ -29,3 +29,5 @@ export default class Cookies {
         return Objects.join(this._cookies, '=', '; ');
     }
 }
+
+export {Cookies}

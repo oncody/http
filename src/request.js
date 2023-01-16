@@ -1,9 +1,11 @@
 import axios from "axios";
 
-export default class HttpRequest {
+import {Url} from "./url/Url.js";
+
+class Request {
     /**
      *
-     * @param {URL} url
+     * @param {Url} url
      * @param {Cookies} cookies
      */
     constructor(url, cookies) {
@@ -20,3 +22,5 @@ export default class HttpRequest {
     }
 
 }
+
+export {Request}

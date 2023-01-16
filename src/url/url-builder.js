@@ -1,6 +1,6 @@
-import Url from "./url.js";
+import {Url} from "./url.js";
 
-export default class UrlBuilder {
+class UrlBuilder {
     /**
      * @param {string} url
      * @returns {UrlBuilder}
@@ -32,3 +32,5 @@ export default class UrlBuilder {
         return new Url(url);
     }
 }
+
+export {UrlBuilder}
